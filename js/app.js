@@ -32,7 +32,16 @@ const verMas = () => {
     btnVerMas[3].className = "btn btn-primary";
   }
 };
+
+const obtenerTexto =(e)=>{
+  e.preventDefault();
+  const inputBusqueda = document.querySelector("#inputBusqueda");
+  
+}
 const btnVerMas = document.getElementsByTagName("button");
+const formularioBusqueda = document.querySelector("form");
+console.log(formularioBusqueda);
 console.log(btnVerMas[3]);
 
 btnVerMas[3].addEventListener("click", verMas);
+formularioBusqueda.addEventListener("submit", obtenerTexto);
